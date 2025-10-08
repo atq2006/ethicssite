@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Меню — Кочевая гармония</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #faf8f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #4a7a5a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #dfeee1;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4a7a5a;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      text-align: center;
+      color: #4a7a5a;
+      margin-bottom: 30px;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 15px;
+    }
+
+    .menu-item img {
+      width: 120px;
+      height: 80px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .menu-text {
+      margin-left: 20px;
+    }
+
+    .menu-text h3 {
+      margin: 0;
+      color: #333;
+    }
+
+    .menu-text p {
+      margin: 5px 0 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* Блок выбора номеров */
+    .rooms {
+      margin-top: 50px;
+    }
+
+    .room-options {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .room {
+      background-color: #f5f8f6;
+      border: 1px solid #d6e2d8;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      width: 280px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .room:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .room img {
+      width: 100%;
+      height: 160px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .room h3 {
+      color: #4a7a5a;
+      margin-bottom: 10px;
+    }
+
+    .room p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .room a button {
+      background-color: #4a7a5a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .room a button:hover {
+      background-color: #3d664b;
+    }
+
+    footer {
+      background-color: #4a7a5a;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    .contacts {
+      font-size: 14px;
+      color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Кочевая гармония
+  </header>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">О нас</a>
+    <a href="menu.html">Меню</a>
+    <a href="booking.html">Бронирование</a>
+  </nav>
+
+  <section>
+    <h2>Наше меню</h2>
+
+    <div class="menu-item">
+      <img src="beshbarmak.jpg" alt="Бешбармак">
+      <div class="menu-text">
+        <h3>Бешбармак</h3>
+        <p>Традиционное казахское блюдо из отварного мяса и домашней лапши. Символ гостеприимства и тепла.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="kumys.jpg" alt="Кумыс">
+      <div class="menu-text">
+        <h3>Кумыс</h3>
+        <p>Легендарный напиток из кобыльего молока — лёгкий, освежающий и полезный.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="baursak.jpg" alt="Баурсаки">
+      <div class="menu-text">
+        <h3>Баурсаки</h3>
+        <p>Золотистые воздушные шарики из теста, подаваемые с мёдом — вкус степного угощения.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="shubat.jpg" alt="Шубат">
+      <div class="menu-text">
+        <h3>Шубат</h3>
+        <p>Напиток из верблюжьего молока с насыщенным вкусом — источник энергии в жаркой степи.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="kazy.jpg" alt="Казы">
+      <div class="menu-text">
+        <h3>Казы</h3>
+        <p>Домашняя колбаса из конины — гордость казахской кухни, символ уважения и традиций.</p>
+      </div>
+    </div>
+
+    <div class="rooms">
+      <h2>Выбор номера жилья</h2>
+      <div class="room-options">
+        <div class="room">
+          <img src="room-econom.jpg" alt="Эконом">
+          <h3>Эконом</h3>
+          <p>Уютный юртовый номер с минимальными удобствами для путешественников, ищущих простоту и комфорт.</p>
+          <a href="booking.html?room=econom"><button>Выбрать</button></a>
+        </div>
+        <div class="room">
+          <img src="room-standard.jpg" alt="Стандарт">
+          <h3>Стандарт</h3>
+          <p>Просторный номер с красивым интерьером и видом на степь. Идеальный баланс цены и уюта.</p>
+          <a href="booking.html?room=standard"><button>Выбрать</button></a>
+        </div>
+        <div class="room">
+          <img src="room-luxury.jpg" alt="Люкс">
+          <h3>Люкс</h3>
+          <p>Роскошный номер в стиле кочевой элиты с традиционными элементами и современными удобствами.</p>
+          <a href="booking.html?room=luxury"><button>Выбрать</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Кочевая гармония</p>
+    <div class="contacts">
+      Контакты: +77072087499 zhassel.rizabek@narxoz.kz |
+      +77771448348 ansar.bakyt@narxoz.kz |
+      +7 747 696 9215 zaurbek.yuldashbayev@narxoz.kz
+    </div>
+  </footer>
+</body>
+</html>
+

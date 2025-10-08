@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кочевая гармония — Главная</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #faf8f5;
+      color: #2E2C2B;
+    }
+
+    header {
+      background-color: #CB997E;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f7ede2;
+    }
+
+    .hero {
+      background-image: url('steppe.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero h2, .hero p, .hero a {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero a {
+      background-color: #DDBEA9;
+      color: #2E2C2B;
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .hero a:hover {
+      background-color: #E7BC91;
+    }
+
+    .about {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .features {
+      background-color: #EADBC8;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 30px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .feature h4 {
+      color: #3E2F1C;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #3E2F1C;
+      color: #f7ede2;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 15px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer .contacts {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 30px; }
+      .hero p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Кочевая гармония</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="menu.html">Меню</a>
+      <a href="booking.html">Бронирование</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Место, где традиции встречаются с природой</h2>
+    <p>Погрузитесь в атмосферу кочевой гармонии и почувствуйте дух степи</p>
+    <a href="booking.html">Забронировать</a>
+  </section>
+
+  <section class="about">
+    <h3>О проекте</h3>
+    <p>«Кочевая гармония» — это сеть экокомплексов, вдохновлённых традициями казахского кочевого народа. Мы объединяем уют, национальную кухню и уважение к природе. Здесь можно отдохнуть в юртах, попробовать блюда из локальных продуктов и насладиться видом бескрайней степи.</p>
+  </section>
+
+  <section class="features">
+    <h3>Наши преимущества</h3>
+    <div class="feature-grid">
+      <div class="feature">
+        <h4>🏕️ Уютные юрты</h4>
+        <p>Проживание в комфортных юртах с современными удобствами и атмосферой традиции.</p>
+      </div>
+      <div class="feature">
+        <h4>🌿 Экологичность</h4>
+        <p>Мы используем только природные материалы и заботимся о сохранении окружающей среды.</p>
+      </div>
+      <div class="feature">
+        <h4>🍲 Национальная кухня</h4>
+        <p>Попробуйте лучшие блюда казахской кухни, приготовленные из свежих местных продуктов.</p>
+      </div>
+      <div class="feature">
+        <h4>🌅 Живописная природа</h4>
+        <p>Насладитесь видом бескрайних степей, чистого неба и атмосферы спокойствия.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contacts">
+      📞 +7 707 208 7499 — zhassel.rizabek@narxoz.kz<br>
+      📞 +7 777 144 8348 — ansar.bakyt@narxoz.kz<br>
+      📞 +7 747 696 9215 — zaurbek.yuldashbayev@narxoz.kz
+    </div>
+    <p>© 2025 Кочевая гармония — Все права защищены</p>
+  </footer>
+
+</body>
+</html>

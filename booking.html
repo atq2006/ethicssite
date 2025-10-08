@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Бронирование — Кочевая гармония</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #faf8f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #4a7a5a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #dfeee1;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4a7a5a;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      text-align: center;
+      color: #4a7a5a;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #4a7a5a;
+    }
+
+    input, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4a7a5a;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #3d664d;
+    }
+
+    footer {
+      background-color: #4a7a5a;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    .contacts {
+      font-size: 14px;
+      color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Кочевая гармония
+  </header>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">О нас</a>
+    <a href="menu.html">Меню</a>
+    <a href="booking.html">Бронирование</a>
+  </nav>
+
+  <section>
+    <h2>Форма бронирования</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+      </div>
+
+      <div>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7..." required>
+      </div>
+
+      <div>
+        <label for="room">Тип номера:</label>
+        <select id="room" name="room" required>
+          <option value="">Выберите тип номера...</option>
+          <option value="econom">Эконом</option>
+          <option value="standard">Стандарт</option>
+          <option value="luxury">Люкс</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="checkin">Дата заезда:</label>
+        <input type="date" id="checkin" name="checkin" required>
+      </div>
+
+      <div>
+        <label for="checkout">Дата выезда:</label>
+        <input type="date" id="checkout" name="checkout" required>
+      </div>
+
+      <div>
+        <label for="guests">Количество гостей:</label>
+        <select id="guests" name="guests" required>
+          <option value="">Выберите...</option>
+          <option value="1">1 гость</option>
+          <option value="2">2 гостя</option>
+          <option value="3">3 гостя</option>
+          <option value="4">4 гостя</option>
+          <option value="5+">5 и более</option>
+        </select>
+      </div>
+
+      <button type="submit">Забронировать</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Кочевая гармония</p>
+    <div class="contacts">
+      Контакты: +77072087499 zhassel.rizabek@narxoz.kz |
+      +77771448348 ansar.bakyt@narxoz.kz |
+      +7 747 696 9215 zaurbek.yuldashbayev@narxoz.kz
+    </div>
+  </footer>
+
+  <script>
+    // Получаем параметр room из URL
+    const params = new URLSearchParams(window.location.search);
+    const roomType = params.get("room");
+
+    // Если параметр есть, выбираем соответствующий вариант в списке
+    if (roomType) {
+      const roomSelect = document.getElementById("room");
+      roomSelect.value = roomType;
+    }
+  </script>
+</body>
+</html>
